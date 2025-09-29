@@ -2,9 +2,10 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.main-header, .main-footer {
+.main-header, .main-footer, .about {
     background-color: #1F2937;
     color: white;
 }
@@ -15,6 +16,10 @@
     padding: 16px;
 }
 
+.main-header h3 {
+    font-size: 24px;
+}
+
 .nav-bar {
     display: flex;
     gap: 16px;
@@ -23,4 +28,109 @@
 .nav-bar a {
     text-decoration: none;
     color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.about .image {
+    background-color: rgb(107, 114, 123);
+    padding: 64px 150px;
+}
+
+.about h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.about .btn {
+    background-color: #3882F6;
+    padding: 8px 24px;
+}
+
+.more-info {
+    padding: 72px;
+    text-align: center;
+}
+
+.more-info h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.more-info .container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.more-info .wrapper {
+    width: 150px;
+}
+
+.more-info .wrapper .card{
+    border: solid rgb(10, 147, 233) 4px;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.quote .container blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote .container p {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.sign-up .container {
+    background-color: #3882F6;
+    color: white;
+    font-size: 24px;
+    margin: 108px;
+    justify-content: space-around;
+    padding: 48px;
+    border-radius: 8px;
+}
+
+.sign-up .container .btn {
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 8px 24px;    
+    flex-grow: 0;
+}
+
+.sign-up .container .text {
+    text-decoration: none
+}
+
+.main-footer {
+    padding: 48px;
+    font-size: 20px;
+    text-align: center;
 }
